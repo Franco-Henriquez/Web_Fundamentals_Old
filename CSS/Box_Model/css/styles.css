@@ -1,3 +1,9 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px solid #000; /*just for troubleshooting*/
+}
+/*200 + 700 + 26(left margin from blue) + 2(whitespace from blue on left and right?) + 2(whitespace from red on left and right?) = 930*/
 .container{
     width: 950px;
     background-color: silver;
@@ -16,7 +22,7 @@
     background-color: blue;
     display: inline-block;
     vertical-align: top;
-    margin: 0px 20px 0px 0px;
+    margin: 0px 26px 0px 0px;
 }
 .main {
     height: 400px;
@@ -25,6 +31,7 @@
     display: inline-block;
     padding: 10px;
     margin: 0px;
+    border: 0px;
 
 }
 .sub-content {
