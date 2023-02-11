@@ -1,0 +1,59 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.row {
+    display: flex;
+    margin: 1% auto;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/*select body's first child only and then select all columns in it*/
+/*aka select all childs in row 1*/
+body :first-child .col {
+    background: rgb(0, 255, 55);
+    text-align: center;
+    padding: 5px;
+    flex: 1; /*makes each .col container take up 1 column*/
+    /* with the use of flex 1 there's no need for width*/
+    /*this only works because we want all columns to be event*/
+}
+
+
+/*select all childs in row 2*/
+body .row:nth-child(2) * {
+    background: rgb(255, 0, 98);
+    padding: 5px;
+}
+/*select row 2 .col*/
+body .row:nth-child(2) > .col {
+    text-align: center;
+    width: 33%;
+}
+/*select row 2 .col-2*/
+body .row:nth-child(2) > .col-2 {
+    text-align: center;
+    width: 66%;
+}
+
+
+
+/*select all childs in row 3*/
+body .row:nth-child(3) * {
+    background: rgb(0, 238, 255);
+    padding: 5px;
+}
+/*select row 2 .col-2 (column 1)*/
+body .row:nth-child(3) > .col-2 {
+    text-align: center;
+    width: 40%;
+}
+/*select row 2 .col-3 (column 2)*/
+body .row:nth-child(3) > .col-3 {
+    text-align: center;
+    width: 60%;
+}
