@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#nav {
+    background: #000;
+    width: 100%;
+    height: auto;
+    color: #fff;
+    padding: 0 10%;
+    display: flex;
+    flex-flow: row wrap;
+}
+.menu {
+    flex: 2; /*.menu and .login are part of the same flex container #nav */
+
+    display: flex; /* this makes .menu a flexible container for h1 and ul*/
+}
+
+.login {
+    flex: 1;
+    margin: auto; /*sets childs vertical aligment to the middle*/
+}
+
+.menu h1 {
+    
+}
+
+.menu ul {
+    display: flex; /* this makes .menu ul a flexible container for listed menu items*/
+    flex-flow: row nowrap;
+}
+
+.menu ul li {
+    text-align: center;
+    list-style: none;
+    margin: auto; /*sets its vertical aligment to the middle*/
+}
+
+
+.login button {
+    vertical-align: middle;
+}
+
+/* 
+#nav ul {
+    display: flex;
+}
+
+#nav ul li {
+    width: 125px;
+    max-width: 200px;
+    margin: auto;
+    text-align: center;
+    list-style: none;
+
+} */
